@@ -29,8 +29,8 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <button onClick={handleBrown}style={{backgroundColor:color2,color:yellow}}>Brown</button>
-        <button onClick={handleBlack}style={{backgroundColor:color1,color:yellow}}>Black</button>
+        <button onClick={handleBrown}style={{backgroundColor:color2,color:"yellow"}}>Brown</button>
+        <button onClick={handleBlack}style={{backgroundColor:color1,color:"yellow"}}>Black</button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
