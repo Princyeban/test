@@ -4,7 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [color2, setcolor2] = useState("white");
+
+  function handleBrown() {
+    setcolor2("brown");
+  }
 
   return (
     <>
@@ -21,6 +26,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <button onClick={handleBrown}style={{backgroundColor:color2,color:yellow}}>Brown</button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
